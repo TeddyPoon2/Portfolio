@@ -1,0 +1,111 @@
+@font-face {
+  font-family: earwig_factory;
+  src: url(../font/earwig_factory_rg.otf);
+}
+
+.navBar {
+  font-family: "earwig_factory";
+  font-size: 50px;
+  padding-top: 2rem;
+  text-shadow: 2px 2px 10px black, -2px -2px 10px black;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul > li {
+  display: inline-block;
+  position: relative;
+}
+
+ul > li:hover {
+  transform: rotate(11deg);
+  animation: tiltBounce 0.15s ease;
+  animation-fill-mode: forwards;
+}
+
+ul > li:nth-child(even):hover {
+  transform: rotate(-6deg);
+  animation: tiltBounceAlt 0.15s ease;
+  animation-fill-mode: forwards;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:active,
+a:link {
+  color: white;
+}
+
+/* .test {
+  border: 5px solid white;
+  animation-name: appear;
+  animation-duration: 5s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+@keyframes tiltBounce {
+  0% {
+    transform: scale(1) rotate(-7deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(-7deg);
+  }
+  100% {
+    transform: scale(1.15) rotate(-7deg);
+  }
+}
+
+@keyframes tiltBounceAlt {
+  0% {
+    transform: scale(1) rotate(7deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(7deg);
+  }
+  100% {
+    transform: scale(1.15) rotate(7deg);
+  }
+}
+
+@keyframes test {
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@use postcss-cssnext;
+
+.selector {
+  height: 8%;
+  left: 50%;
+  position: absolute;
+  top: 26.5%;
+  transform: translate(-50%, -50%);
+  transition: transform 50ms;
+  width: 20%;
+  z-index: 10;
+}
+
+.red {
+  fill: #ff0022;
+}
+
+.blue {
+  fill: #1cfeff;
+  mix-blend-mode: screen; /* 🎩🐰 Where all the magic happens! Only needed on the top layer (blue) */
+}
