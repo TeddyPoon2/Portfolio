@@ -12,7 +12,6 @@ import Project from "./pages/Project.jsx";
 import Skill from "./pages/Skill.jsx";
 import Contact from "./pages/Contact.jsx";
 import MainLayout from "./layout/MainLayout.jsx";
-// import Home from "./pages/Home.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import "../css/bgmBtn.css";
 import bgm from "../audio/Beneath the Mask_instrumental version_-9db.ogg";
 
-const Bgm = () => {
+// eslint-disable-next-line react/prop-types
+const Bgm = ({ isInteracted }) => {
   const [audio] = useState(new Audio(bgm));
   const [bgmState, setPlay] = useState(true);
   audio.loop = true;
@@ -10,17 +11,21 @@ const Bgm = () => {
   useEffect(() => {
     // eslint-disable-next-line no-extra-boolean-cast
     if (!!bgmState) {
-      //handle web browser that blocked auto play like
-      //Chrome
+      //handle web browser that blocked auto play like Chrome
       audio.play().catch(() => {
         setPlay(false);
       });
     } else if (!bgmState) {
       audio.pause();
     }
-  });
+  }, [bgmState, audio]);
 
-  // console.log(`${bgmState}`);
+  // capture user first interact
+  useEffect(() => {
+    if (isInteracted === 1 && !bgmState) {
+      setPlay(true);
+    }
+  }, [isInteracted, bgmState]);
 
   const handleClick = () => {
     if (!bgmState) {
@@ -34,7 +39,7 @@ const Bgm = () => {
   return (
     <>
       <button onClick={handleClick} className="bgmBtn">
-        Play/Pause
+        {bgmState ? "Pause" : "Play"}
       </button>
     </>
   );
