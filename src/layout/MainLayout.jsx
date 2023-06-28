@@ -1,15 +1,17 @@
 import Navbar from "../com/Navbar";
 import { Outlet } from "react-router-dom";
 import Bgm from "../com/Bgm.jsx";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // eslint-disable-next-line react/prop-types
 const MainLayout = () => {
   const [isInteracted, setInteract] = useState(0);
+  const ref = useRef(isInteracted);
 
   useEffect(() => {
     const handleClick = () => {
       setInteract((prev) => prev + 1);
+      ref.current += 1;
     };
     document.addEventListener("click", handleClick);
   }, []);
@@ -17,11 +19,9 @@ const MainLayout = () => {
   return (
     <>
       <div className="bg"></div>
-      <Navbar />
+      <Navbar isInteracted={ref} />
       <Outlet />
-      {/* <Outlet context={isInteracted} /> */}
-      <Bgm />
-      {/* <Bgm isInteracted={isInteracted} /> */}
+      <Bgm isInteracted={ref} />
     </>
   );
 };

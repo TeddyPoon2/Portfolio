@@ -1,6 +1,5 @@
 // import React from "react";
 import "../css/RandomPolygon.css";
-
 const RandomPolygon = () => {
   return (
     <>

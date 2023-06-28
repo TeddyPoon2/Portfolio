@@ -7,6 +7,7 @@ import {
   RouterProvider,
   createRoutesFromElements,
   Route,
+  useParams,
 } from "react-router-dom";
 import Project from "./pages/Project.jsx";
 import Skill from "./pages/Skill.jsx";
