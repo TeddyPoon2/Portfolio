@@ -20,8 +20,10 @@ const router = createBrowserRouter(
       <Route path="project" element={<Project />} />
       <Route path="contact" element={<Contact />} />
     </Route>
-  )
+  ),
+  { basename: "/Portfolio" }
 );
+
 function App() {
   return <RouterProvider router={router} />;
 }
