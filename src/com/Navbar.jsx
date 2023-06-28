@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import useSound from "use-sound";
 import selectSfx from "../audio/00042_select.wav";
 import "../css/navBar.css";
+import RandomPolygon from "./RandomPolygon";
 
 const Navbar = () => {
   const audioContext = new AudioContext();
@@ -17,6 +18,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navBar">
+        <RandomPolygon />
         <ul>
           <li onMouseOver={playsound}>
             <NavLink to="/">Home</NavLink>
