@@ -9,7 +9,8 @@ const MainLayout = () => {
   const ref = useRef(isInteracted);
 
   useEffect(() => {
-    const handleClick = () => {
+    const handleClick = (e) => {
+      e.preventDefault();
       setInteract((prev) => prev + 1);
       ref.current += 1;
     };
@@ -19,8 +20,8 @@ const MainLayout = () => {
   return (
     <>
       <div className="bg"></div>
-      <Navbar isInteracted={ref} />
-      <Outlet />
+      <Navbar />
+      <Outlet context={[ref]} />
       <Bgm isInteracted={ref} />
     </>
   );

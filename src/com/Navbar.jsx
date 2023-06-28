@@ -4,13 +4,11 @@ import useSound from "use-sound";
 import selectSfx from "../audio/00042_select.wav";
 import "../css/navBar.css";
 
-const Navbar = ({ isInteracted }) => {
+const Navbar = () => {
   const audioContext = new AudioContext();
   const [select] = useSound(selectSfx);
-  const ref = isInteracted.current;
 
   const playsound = () => {
-    console.log(ref);
     if (audioContext.state !== "suspended") {
       select();
     }

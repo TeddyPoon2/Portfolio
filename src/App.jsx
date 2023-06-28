@@ -1,15 +1,29 @@
 import "./css/App.css";
-import RandomPolygon from "./com/RandomPolygon";
 
-function App({ interact }) {
-  console.log(interact);
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+import Project from "./pages/Project.jsx";
+import Skill from "./pages/Skill.jsx";
+import Contact from "./pages/Contact.jsx";
+import MainLayout from "./layout/MainLayout.jsx";
+import Home from "./pages/Home";
 
-  return (
-    <>
-      <h1>Home Page{interact}</h1>
-      <RandomPolygon />
-    </>
-  );
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<MainLayout />}>
+      <Route path="/" element={<Home />} />
+      <Route path="skill" element={<Skill />} />
+      <Route path="project" element={<Project />} />
+      <Route path="contact" element={<Contact />} />
+    </Route>
+  )
+);
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;
