@@ -18,8 +18,10 @@ const MainLayout = () => {
     <>
       <div className="bg"></div>
       <Navbar />
-      <Outlet context={isInteracted} />
-      <Bgm isInteracted={isInteracted} />
+      <Outlet />
+      {/* <Outlet context={isInteracted} /> */}
+      <Bgm />
+      {/* <Bgm isInteracted={isInteracted} /> */}
     </>
   );
 };

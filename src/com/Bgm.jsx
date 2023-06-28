@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../css/bgmBtn.css";
 import bgm from "../audio/Beneath the Mask_instrumental version_-9db.ogg";
 
@@ -6,26 +6,30 @@ import bgm from "../audio/Beneath the Mask_instrumental version_-9db.ogg";
 const Bgm = ({ isInteracted }) => {
   const [audio] = useState(new Audio(bgm));
   const [bgmState, setPlay] = useState(true);
+  const audioContext = new AudioContext();
   audio.loop = true;
+  // const stateRef = useRef(audioContext.state);
 
   useEffect(() => {
     // eslint-disable-next-line no-extra-boolean-cast
     if (!!bgmState) {
       //handle web browser that blocked auto play like Chrome
-      audio.play().catch(() => {
-        setPlay(false);
-      });
+      console.log("play");
+      audio.play();
+      // .catch(() => {
+      //   setPlay(false);
+      // });
     } else if (!bgmState) {
       audio.pause();
     }
-  }, [bgmState, audio]);
+  }, [bgmState, audioContext.state, audio]);
 
   // capture user first interact
-  useEffect(() => {
-    if (isInteracted === 1 && !bgmState) {
-      setPlay(true);
-    }
-  }, [isInteracted, bgmState]);
+  // useEffect(() => {
+  //   if (isInteracted === 1 && !bgmState) {
+  //     setPlay(true);
+  //   }
+  // }, [isInteracted]);
 
   const handleClick = () => {
     if (!bgmState) {
@@ -39,7 +43,7 @@ const Bgm = ({ isInteracted }) => {
   return (
     <>
       <button onClick={handleClick} className="bgmBtn">
-        {bgmState ? "Pause" : "Play"}
+        {audio.paused ? "Play" : "Pause"}
       </button>
     </>
   );

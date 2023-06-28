@@ -1,6 +1,12 @@
 @font-face {
   font-family: earwig_factory;
   src: url(../font/earwig_factory_rg.otf);
+  /* font-family: HEAVYHEA;
+  src: url(../font/HEAVYHEA.TTF);
+  font-family: Expose-Regular;
+  src: url(../font/Expose-Regular.otf);
+  font-family: Persona5MenuFontPrototype-Regular;
+  src: url(../font/Persona5MenuFontPrototype-Regular.ttf); */
 }
 
 .navBar {

@@ -1,0 +1,21 @@
+@use postcss-cssnext;
+
+.selector {
+  height: 8%;
+  left: 50%;
+  position: absolute;
+  top: 26.5%;
+  transform: translate(-50%, -50%);
+  transition: transform 50ms;
+  width: 20%;
+  z-index: 10;
+}
+
+.red {
+  fill: #ff0022;
+}
+
+.blue {
+  fill: #1cfeff;
+  mix-blend-mode: screen; /* 🎩🐰 Where all the magic happens! Only needed on the top layer (blue) */
+}

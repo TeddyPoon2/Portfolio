@@ -1,5 +1,6 @@
 // import React from "react";
 import { useOutletContext } from "react-router-dom";
+import RandomPolygon from "../com/RandomPolygon.jsx";
 
 const Home = () => {
   const isInteracted = useOutletContext();
@@ -8,6 +9,7 @@ const Home = () => {
   return (
     <div>
       <h1>Home Page{isInteracted}</h1>
+      <RandomPolygon />
     </div>
   );
 };
