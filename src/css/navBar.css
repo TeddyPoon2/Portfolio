@@ -23,13 +23,13 @@ nav {
   padding: 0;
   display: flex;
   justify-content: center;
-  /* gap: 5rem; */
 }
 
 nav > a {
   display: inline-block;
   position: relative;
   width: 100%;
+  height: 100px;
 }
 
 nav > a:hover {
@@ -55,11 +55,11 @@ a:link {
 }
 
 .indicator {
-  height: 70%;
+  height: 60%;
   width: 20%;
   position: absolute;
   left: 0;
-  top: 45px;
+  top: 40px;
   z-index: -1;
   transition: 100ms;
 }
