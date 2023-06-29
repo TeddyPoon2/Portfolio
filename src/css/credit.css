@@ -1,0 +1,4 @@
+.credit.active ~ .indicator {
+  left: 1020px;
+  width: 22%;
+}

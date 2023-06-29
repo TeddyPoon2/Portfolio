@@ -1,5 +1,3 @@
-// import React from "react";
-import "../css/RandomPolygon.css";
 import Snap from "snapsvg-cjs";
 import { useEffect, useRef } from "react";
 
@@ -67,7 +65,7 @@ const RandomPolygon = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <svg
         ref={con}
         className="selector"
@@ -77,7 +75,7 @@ const RandomPolygon = () => {
         <polygon className="red" points="10,20 80,20 80,30, 20,30"></polygon>
         <polygon className="blue" points="30,10 90,30 100,35, 20,50"></polygon>
       </svg>
-    </div>
+    </>
   );
 };
 

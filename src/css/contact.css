@@ -1,0 +1,4 @@
+.contact.active ~ .indicator {
+  left: 740px;
+  width: 25%;
+}

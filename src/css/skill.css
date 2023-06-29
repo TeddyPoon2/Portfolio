@@ -1,0 +1,4 @@
+/* .skill */
+.active ~ .indicator {
+  left: 260px;
+}

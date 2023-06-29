@@ -1,4 +1,4 @@
-// import React from "react";
+import "../css/project.css";
 
 const Project = () => {
   return <h1>Project Page</h1>;

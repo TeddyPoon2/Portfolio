@@ -18,7 +18,7 @@
   width: 1280px;
 }
 
-nav {
+ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -26,19 +26,19 @@ nav {
   /* gap: 5rem; */
 }
 
-nav > a {
+ul > li {
   display: inline-block;
   position: relative;
   width: 100%;
 }
 
-nav > a:hover {
+ul > li:hover {
   transform: rotate(11deg);
   animation: tiltBounce 0.15s ease;
   animation-fill-mode: forwards;
 }
 
-nav > a:nth-child(even):hover {
+ul > li:nth-child(even):hover {
   transform: rotate(-6deg);
   animation: tiltBounceAlt 0.15s ease;
   animation-fill-mode: forwards;

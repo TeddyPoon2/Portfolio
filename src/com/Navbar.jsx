@@ -1,4 +1,3 @@
-// import React from "react";
 import { NavLink } from "react-router-dom";
 import useSound from "use-sound";
 import selectSfx from "../audio/00042_select.wav";
@@ -14,28 +13,29 @@ const Navbar = () => {
       select();
     }
   };
-
   return (
     <>
       <div className="navBar">
-        <RandomPolygon />
-        <ul>
-          <li onMouseOver={playsound}>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li onMouseOver={playsound}>
-            <NavLink to="/Skill">Skill</NavLink>
-          </li>
-          <li onMouseOver={playsound}>
-            <NavLink to="/Project">Project</NavLink>
-          </li>
-          <li onMouseOver={playsound}>
-            <NavLink to="/Contact">Contact</NavLink>
-          </li>
-          <li onMouseOver={playsound}>
-            <NavLink to="/Contact">Credit</NavLink>
-          </li>
-        </ul>
+        <nav>
+          <NavLink to="/" className={"home"} onMouseOver={playsound}>
+            Home
+          </NavLink>
+          <NavLink to="/Skill" className={"skill"} onMouseOver={playsound}>
+            Skill
+          </NavLink>
+          <NavLink to="/Project" className={"project"} onMouseOver={playsound}>
+            Project
+          </NavLink>
+          <NavLink to="/Contact" className={"contact"} onMouseOver={playsound}>
+            Contact
+          </NavLink>
+          <NavLink to="/credit" className={"credit"} onMouseOver={playsound}>
+            Credit
+          </NavLink>
+          <div className="indicator">
+            <RandomPolygon />
+          </div>
+        </nav>
       </div>
     </>
   );

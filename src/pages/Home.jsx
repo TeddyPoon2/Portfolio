@@ -1,4 +1,5 @@
 import { useOutletContext } from "react-router-dom";
+import "../css/home.css";
 
 const Home = () => {
   const [ref] = useOutletContext();

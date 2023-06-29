@@ -1,0 +1,3 @@
+.home.active ~ .indicator {
+  left: 0;
+}
