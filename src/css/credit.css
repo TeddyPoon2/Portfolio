@@ -19,6 +19,6 @@
 }
 
 .creditPage ~ .dialogueWrapper > .dialogueImg > .content::before {
-  content: "So much thanks with they. with out them,\A I don't think my portfolio would exsit";
+  content: "So much thanks to them. With out them,\A I don't think my portfolio would exsit";
   white-space: pre;
 }

@@ -23,7 +23,7 @@ const MainLayout = () => {
       <div className="bg"></div>
       <Navbar />
       <Outlet context={[ref]} />
-      <DialogueBubble />
+      {/* <DialogueBubble /> */}
       <Bgm isInteracted={ref} />
     </>
   );
