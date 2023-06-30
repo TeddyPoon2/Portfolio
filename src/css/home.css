@@ -21,3 +21,33 @@
   content: "I'm a gamer, an audiophile, \A a self taught learning web developer ";
   white-space: pre;
 }
+
+.container {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.homeBG {
+  height: auto;
+  width: 1000px;
+  position: absolute;
+  top: -50px;
+  z-index: -2;
+}
+
+.homeBG > img {
+  max-width: 100%;
+}
+
+.HomeTitle {
+  font-family: Markin_LT_Ultra_Bold;
+  font-size: 80px;
+  text-shadow: 1px 1px 5px gold, -1px -1px 5px gold;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}

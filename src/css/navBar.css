@@ -100,21 +100,6 @@ a:link {
   width: 20%;
 }
 
-/* .test {
-  border: 5px solid white;
-  animation-name: appear;
-  animation-duration: 5s;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
 @keyframes tiltBounce {
   0% {
     transform: scale(1) rotate(-7deg);

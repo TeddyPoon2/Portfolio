@@ -22,3 +22,7 @@
   content: "So much thanks to them. With out them,\A I don't think my portfolio would exsit";
   white-space: pre;
 }
+
+.creditPage ~ h1 {
+  font-size: 50px;
+}

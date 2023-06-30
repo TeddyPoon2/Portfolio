@@ -1,6 +1,7 @@
 import { useOutletContext } from "react-router-dom";
 import "../css/home.css";
 import DialogueBubble from "../com/DialogueBubble";
+import homeBG from "../img/bg1.png";
 
 const Home = () => {
   const [ref] = useOutletContext();
@@ -8,7 +9,13 @@ const Home = () => {
   return (
     <>
       <div className="homePage">
-        <h1 className="title">About Me</h1>
+        <div className="container">
+          <div className="homeBG">
+            <h1 className="HomeTitle">About Me</h1>
+            <p className="about"></p>
+            <img src={homeBG}></img>
+          </div>
+        </div>
       </div>
       <DialogueBubble />
     </>

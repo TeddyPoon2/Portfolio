@@ -1,12 +1,11 @@
 import "../css/contact.css";
 import DialogueBubble from "../com/DialogueBubble";
+import phone from "../img/sns.png";
 
 const Contact = () => {
   return (
     <>
-      <div className="contactPage">
-        <h1 className="title">Contact</h1>
-      </div>
+      <div className="contactPage"></div>
       <DialogueBubble />
     </>
   );
