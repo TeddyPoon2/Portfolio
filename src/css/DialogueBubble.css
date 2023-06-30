@@ -34,3 +34,19 @@
 .animate__animated.animate__rotateInUpLeft {
   --animate-duration: 0.5s;
 }
+
+.e {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  height: 42px;
+}
+.whiteBox {
+  background-color: white;
+  height: 12px;
+  width: 22px;
+  position: absolute;
+  top: 3px;
+  left: 21px;
+  transform: rotate(2deg);
+}
