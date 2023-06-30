@@ -7,12 +7,14 @@ const Bgm = ({ isInteracted }) => {
   const [audio] = useState(new Audio(bgm));
   const [bgmState, setPlay] = useState(true);
   const [isInteract] = useState(isInteracted);
+  const audioCtx = new AudioContext();
   const ref = isInteract.current;
   audio.loop = true;
 
   useEffect(() => {
     // eslint-disable-next-line no-extra-boolean-cast
     if (!!bgmState) {
+      console.log(audioCtx.state);
       //handle web browser that blocked auto play like Chrome
       audio.play().catch(() => {
         setPlay(false);
@@ -24,9 +26,11 @@ const Bgm = ({ isInteracted }) => {
 
   //capture is user interacted and auto play
   useEffect(() => {
-    if (ref === 1) {
+    console.log("run1");
+    if (ref === 1 && audioCtx.state !== "suspended") {
       setPlay(true);
     }
+    return;
   }, [ref]);
 
   const handleClick = () => {
