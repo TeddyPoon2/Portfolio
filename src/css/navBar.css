@@ -12,7 +12,7 @@
 .navBar {
   font-family: "earwig_factory";
   font-size: 50px;
-  padding-top: 3rem;
+  padding-top: 2rem;
   text-shadow: 2px 2px 10px black, -2px -2px 10px black;
   position: relative;
   width: 1280px;
@@ -29,7 +29,8 @@ nav > a {
   display: inline-block;
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 80px;
+  padding-top: 20px;
 }
 
 nav > a:hover {
@@ -59,7 +60,7 @@ a:link {
   width: 20%;
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 45px;
   z-index: -1;
   transition: 100ms;
 }
@@ -75,6 +76,31 @@ a:link {
 .blue {
   fill: #1cfeff;
   mix-blend-mode: screen;
+}
+
+.navBar a:nth-child(1):hover ~ .indicator {
+  left: 0;
+  width: 20%;
+}
+
+.navBar a:nth-child(2):hover ~ .indicator {
+  left: 260px;
+  width: 20%;
+}
+
+.navBar a:nth-child(3):hover ~ .indicator {
+  left: 485px;
+  width: 23%;
+}
+
+.navBar a:nth-child(4):hover ~ .indicator {
+  left: 745px;
+  width: 22%;
+}
+
+.navBar a:nth-child(5):hover ~ .indicator {
+  left: 1020px;
+  width: 22%;
 }
 
 /* .test {

@@ -4,7 +4,6 @@ import bgm from "../audio/Beneath the Mask_instrumental version_-9db.ogg";
 
 // eslint-disable-next-line react/prop-types
 const Bgm = ({ isInteracted }) => {
-  // const [audio] = new Audio(bgm);
   const [audio] = useState(new Audio(bgm));
   const [bgmState, setPlay] = useState(true);
   const [isInteract] = useState(isInteracted);
