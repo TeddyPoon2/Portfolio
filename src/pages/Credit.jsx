@@ -2,8 +2,8 @@ import "../css/credit.css";
 
 const Credit = () => {
   return (
-    <div>
-      <h1>Credit page</h1>
+    <div className="creditPage">
+      <h1 className="title">Credit</h1>
     </div>
   );
 };

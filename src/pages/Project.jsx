@@ -1,7 +1,11 @@
 import "../css/project.css";
 
 const Project = () => {
-  return <h1>Project Page</h1>;
+  return (
+    <div className="projectPage">
+      <h1 className="title">Project</h1>
+    </div>
+  );
 };
 
 export default Project;

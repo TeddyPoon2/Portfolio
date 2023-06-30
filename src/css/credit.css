@@ -1,4 +1,19 @@
 .credit.active ~ .indicator {
-  left: 1020px;
-  width: 22%;
+  left: 1030px;
+  width: 20%;
+}
+
+.creditPage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.creditPage > .title {
+  font-family: Markin_LT_Ultra_Bold;
+  font-size: 100px;
+  position: absolute;
+  transform: rotate(-40deg);
+  left: 0;
+  top: 0;
 }

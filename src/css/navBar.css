@@ -1,28 +1,25 @@
 @font-face {
   font-family: earwig_factory;
   src: url(../font/earwig_factory_rg.otf);
-  /* font-family: HEAVYHEA;
-  src: url(../font/HEAVYHEA.TTF);
-  font-family: Expose-Regular;
-  src: url(../font/Expose-Regular.otf);
-  font-family: Persona5MenuFontPrototype-Regular;
-  src: url(../font/Persona5MenuFontPrototype-Regular.ttf); */
 }
 
-.navBar {
+.navBarWrapper {
   font-family: "earwig_factory";
   font-size: 50px;
-  padding-top: 2rem;
+  padding-top: 1rem;
   text-shadow: 2px 2px 10px black, -2px -2px 10px black;
-  position: relative;
-  width: 1280px;
+  height: 100%;
+  width: 100%;
 }
 
 nav {
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  position: relative;
   display: flex;
   justify-content: center;
+  margin: auto;
+  padding: 0;
+  width: 1280px;
 }
 
 nav > a {
@@ -60,7 +57,7 @@ a:link {
   width: 20%;
   position: absolute;
   left: 0;
-  top: 45px;
+  top: 30px;
   z-index: -1;
   transition: 100ms;
 }
@@ -78,29 +75,29 @@ a:link {
   mix-blend-mode: screen;
 }
 
-.navBar a:nth-child(1):hover ~ .indicator {
+.navBarWrapper a:nth-child(1):hover ~ .indicator {
   left: 0;
   width: 20%;
 }
 
-.navBar a:nth-child(2):hover ~ .indicator {
+.navBarWrapper a:nth-child(2):hover ~ .indicator {
   left: 260px;
   width: 20%;
 }
 
-.navBar a:nth-child(3):hover ~ .indicator {
+.navBarWrapper a:nth-child(3):hover ~ .indicator {
   left: 485px;
   width: 23%;
 }
 
-.navBar a:nth-child(4):hover ~ .indicator {
-  left: 745px;
+.navBarWrapper a:nth-child(4):hover ~ .indicator {
+  left: 755px;
   width: 22%;
 }
 
-.navBar a:nth-child(5):hover ~ .indicator {
-  left: 1020px;
-  width: 22%;
+.navBarWrapper a:nth-child(5):hover ~ .indicator {
+  left: 1030px;
+  width: 20%;
 }
 
 /* .test {

@@ -1,7 +1,11 @@
 // import React from "react";
 import "../css/skill.css";
 const Skill = () => {
-  return <h1>Skill Page</h1>;
+  return (
+    <div className="skillPage">
+      <h1 className="title">Skill</h1>
+    </div>
+  );
 };
 
 export default Skill;

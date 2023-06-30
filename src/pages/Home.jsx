@@ -5,8 +5,8 @@ const Home = () => {
   const [ref] = useOutletContext();
 
   return (
-    <div>
-      <h1>Home Page {ref.current}</h1>
+    <div className="homePage">
+      <h1 className="title">About Me</h1>
     </div>
   );
 };

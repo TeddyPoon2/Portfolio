@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="navBar">
+      <div className="navBarWrapper">
         <nav>
           <NavLink
             to="/"
