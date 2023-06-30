@@ -25,7 +25,7 @@ const Navbar = () => {
             onMouseOver={playsound}
             onClick={onSelect}
           >
-            Home
+            About
           </NavLink>
           <NavLink
             to="/Skill"

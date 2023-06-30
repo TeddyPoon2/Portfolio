@@ -12,7 +12,11 @@
   font-family: Markin_LT_Ultra_Bold;
   font-size: 100px;
   position: absolute;
-  transform: rotate(-40deg);
-  left: 0;
+  transform: rotate(-30deg);
+  left: 10px;
   top: 10px;
+}
+
+.skillPage ~ .dialogueWrapper > .dialogueImg > .content::before {
+  content: "What I've learned so far";
 }

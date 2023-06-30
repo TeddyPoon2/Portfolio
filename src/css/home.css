@@ -12,7 +12,12 @@
   font-family: Markin_LT_Ultra_Bold;
   font-size: 80px;
   position: absolute;
-  transform: rotate(-40deg);
+  transform: rotate(-30deg);
   left: -10px;
   top: 10px;
+}
+
+.content::before {
+  content: "I'm a gamer, an audiophile, \A a self taught learning web developer ";
+  white-space: pre;
 }

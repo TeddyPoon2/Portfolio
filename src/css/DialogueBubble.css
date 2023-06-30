@@ -1,0 +1,34 @@
+.dialogueWrapper {
+  font-family: Markin_LT_Ultra_Bold;
+  position: absolute;
+  width: 940px;
+  height: 260px;
+  /* border: 2px solid white; */
+  bottom: -20px;
+  left: 200px;
+}
+
+.dialogueImg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bubble.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.name {
+  position: absolute;
+  color: black;
+  transform: rotate(-18deg);
+  font-size: 40px;
+  top: 12px;
+  left: 140px;
+}
+
+.content {
+  color: white;
+  position: absolute;
+  top: 80px;
+  left: 200px;
+}

@@ -13,7 +13,11 @@
   font-family: Markin_LT_Ultra_Bold;
   font-size: 100px;
   position: absolute;
-  transform: rotate(-40deg);
+  transform: rotate(-30deg);
   left: 0;
   top: 0;
+}
+
+.contactPage ~ .dialogueWrapper > .dialogueImg > .content::before {
+  content: "Feel free to contact me";
 }
