@@ -2,7 +2,6 @@ import Navbar from "../com/Navbar";
 import { Outlet } from "react-router-dom";
 import Bgm from "../com/Bgm.jsx";
 import { useState, useEffect, useRef } from "react";
-import DialogueBubble from "../com/DialogueBubble";
 
 // eslint-disable-next-line react/prop-types
 const MainLayout = () => {
@@ -21,7 +20,9 @@ const MainLayout = () => {
   return (
     <>
       <div className="bg"></div>
-      <Navbar />
+      <div className="header">
+        <Navbar />
+      </div>
       <Outlet context={[ref]} />
       {/* <DialogueBubble /> */}
       <Bgm isInteracted={ref} />

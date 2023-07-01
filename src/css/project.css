@@ -19,5 +19,5 @@
 }
 
 .projectPage ~ .dialogueWrapper > .dialogueImg > .content::before {
-  content: "Some of my projects";
+  content: "Some of my works";
 }

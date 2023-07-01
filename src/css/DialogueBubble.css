@@ -39,14 +39,6 @@
   background-color: black;
   color: white;
   display: inline-block;
-  height: 42px;
-}
-.whiteBox {
-  background-color: white;
-  height: 14px;
-  width: 22px;
-  position: absolute;
-  top: 3px;
-  left: 21.5px;
-  transform: rotate(2deg);
+  height: 25px;
+  line-height: 16px;
 }
