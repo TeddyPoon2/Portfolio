@@ -1,7 +1,7 @@
 import "../css/DialogueBubble.css";
 import "animate.css";
 
-const Bubble = () => {
+const Bubble = ({ content }) => {
   return (
     <div className="dialogueWrapper animate__animated animate__rotateInUpLeft">
       <div className="dialogueImg">
@@ -13,7 +13,7 @@ const Bubble = () => {
             </span>
           </div>
         </h1>
-        <h1 className="content animate__animated animate__fadeIn"></h1>
+        <h1 className="content animate__animated animate__fadeIn">{content}</h1>
       </div>
     </div>
   );

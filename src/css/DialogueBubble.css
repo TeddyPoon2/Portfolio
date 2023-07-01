@@ -29,6 +29,8 @@
   position: absolute;
   top: 80px;
   left: 200px;
+  height: 100px;
+  width: 600px;
 }
 
 .animate__animated.animate__rotateInUpLeft {

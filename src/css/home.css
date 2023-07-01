@@ -17,7 +17,7 @@
   top: 10px;
 }
 
-.content::before {
+.homePage ~ .dialogueWrapper > .dialogueImg > .content::before {
   content: "Let's talk about myself";
   white-space: pre;
 }
