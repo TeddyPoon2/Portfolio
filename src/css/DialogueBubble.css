@@ -43,10 +43,10 @@
 }
 .whiteBox {
   background-color: white;
-  height: 12px;
+  height: 14px;
   width: 22px;
   position: absolute;
   top: 3px;
-  left: 21px;
+  left: 21.5px;
   transform: rotate(2deg);
 }
