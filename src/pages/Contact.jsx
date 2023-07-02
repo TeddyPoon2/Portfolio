@@ -21,7 +21,11 @@ const Contact = () => {
     <>
       <div className="contactPage">
         <div className="phoneBG skillTitle animate__animated animate__rotateInUpLeft">
-          <img className="phone" src="/Portfolio/assets/sns-d635f2b5.png"></img>
+          <img
+            className="phone"
+            src="src/img/sns.png"
+            onError="/Portfolio/assets/sns-d635f2b5.png"
+          ></img>
         </div>
         <div className="contactContainer">
           <div className="contactWrapper animate__animated animate__fadeInUp">
