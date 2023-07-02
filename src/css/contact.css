@@ -24,16 +24,16 @@
   content: "Feel free to contact me";
 } */
 
-/* .phoneBG {
+.phoneBG {
   width: 1250px;
   height: 1024px;
-  background-image: url("../img/sns_1250px.png");
+  background-image: url("../img/sns.png");
   position: absolute;
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
 .phoneBG {
   height: auto;

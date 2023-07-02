@@ -7,35 +7,35 @@ const defaultDialogue =
 
 const logos = {
   html5: {
-    url: "src/logo/html5.png",
+    url: "src/img/html5.png",
     dialogue: "The bone of a website, I'm pretty familiar with it.",
   },
   css3: {
-    url: "src/logo/css.png",
+    url: "src/img/css.png",
     dialogue:
       "The look of a website, all the magic happens. It's good to see item aligned.",
   },
   js: {
-    url: "src/logo/js.png",
+    url: "src/img/js.png",
     dialogue:
       "The mechanism of a website, there are lots of libraries I'm planning to learn.",
   },
   bs: {
-    url: "src/logo/bs.png",
+    url: "src/img/bs.png",
     dialogue:
       "Pretty good and easy to use framework, very beginner friendly. I like it.",
   },
   react: {
-    url: "src/logo/react.png",
+    url: "src/img/react.png",
     dialogue: "Thank you facebook, you saved my life. And many of us.",
   },
   git: {
-    url: "src/logo/git.png",
+    url: "src/img/git.png",
     dialogue:
       "Version control system, an insurance of any developer. And me also :P",
   },
   java: {
-    url: "src/logo/java.png",
+    url: "src/img/java.png",
     dialogue: "I learn a little bit of it, planning to learn more later on.",
   },
 };
