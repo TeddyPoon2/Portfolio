@@ -1,3 +1,8 @@
+@font-face {
+  font-family: HEAVYHEA;
+  src: url(../font/HEAVYHEA.TTF);
+}
+
 .home.active ~ .indicator {
   left: 0;
 }
@@ -8,14 +13,14 @@
   position: relative;
 }
 
-.homePage > .title {
+/* .homePage > .title {
   font-family: Markin_LT_Ultra_Bold;
   font-size: 80px;
   position: absolute;
   transform: rotate(-30deg);
   left: -10px;
   top: 10px;
-}
+} */
 
 /* .homePage ~ .dialogueWrapper > .dialogueImg > .content::before {
   content: "Let's talk about myself";
@@ -56,6 +61,7 @@
   position: absolute;
   top: 15px;
   left: 50px;
+  animation-delay: 700ms;
 }
 
 .aboutMe {

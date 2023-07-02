@@ -10,12 +10,12 @@ const MainLayout = () => {
 
   useEffect(() => {
     const handleClick = (e) => {
-      e.preventDefault();
+      // e.preventDefault();
       setInteract((prev) => prev + 1);
       ref.current += 1;
     };
     document.addEventListener("click", handleClick);
-  }, []);
+  }, [ref]);
 
   return (
     <>

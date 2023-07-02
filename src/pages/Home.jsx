@@ -18,7 +18,7 @@ const Home = () => {
         <div className="container animate__animated animate__backInUp animate__delay-30ms">
           <div className="aboutMeWrapper">
             <div className="homeBG">
-              <h1 className="HomeTitle animate__animated animate__bounceInDown animate__delay-1s">
+              <h1 className="HomeTitle animate__animated animate__bounceInDown">
                 About Me
               </h1>
               <img src={homeBG}></img>
