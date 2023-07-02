@@ -40,7 +40,7 @@
   width: 950px;
   position: absolute;
   bottom: 105px;
-  right: 150px;
+  left: 170px;
   animation-delay: 500ms;
   pointer-events: none;
   /* z-index: -1; */
