@@ -2,7 +2,8 @@ import { useState } from "react";
 import "../css/skill.css";
 import DialogueBubble from "../com/DialogueBubble";
 
-const defaultDialogue = "What I've learned so far, try hover those icon ;)";
+const defaultDialogue =
+  "What I've learned so far through bootcamp and myself, try hover those icon ;)";
 
 const logos = {
   html5: {
@@ -53,9 +54,12 @@ const Skill = () => {
   return (
     <>
       <div className="skillPage">
+        <h1 className="skillTitle animate__animated animate__zoomInDown">
+          New Skill
+        </h1>
         <div className="skillBG animate__animated animate__fadeInRight">
           <div className="logoWrapper">
-            <div className="html5Logo animate__animated animate__fadeInDown animate__delay-1000ms">
+            <div className="html5Logo animate__animated animate__fadeInDown">
               <img
                 className="html5"
                 src={logos.html5.url}

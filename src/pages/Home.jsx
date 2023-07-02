@@ -2,9 +2,15 @@ import { useOutletContext } from "react-router-dom";
 import "../css/home.css";
 import DialogueBubble from "../com/DialogueBubble";
 import homeBG from "../img/bg1.png";
+import { useState } from "react";
 
 const Home = () => {
   const [ref] = useOutletContext();
+  const [dia, setDia] = useState("Let's talk about me.");
+
+  const handleClick = () => {
+    setDia("I'm also a gamer, an audiophile and an ACG lover.");
+  };
 
   return (
     <>
@@ -24,7 +30,7 @@ const Home = () => {
                 programming.
               </h3>
               <h3>
-                I am enthusiastic in the entire frontend development field,
+                I'm enthusiastic in the entire frontend development field,
                 aiming to deliver the best experience and attractive visual
                 appearance to users.
               </h3>
@@ -36,7 +42,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <DialogueBubble />
+      <div className="homePageDia" onClick={handleClick}>
+        <DialogueBubble content={dia} />
+      </div>
     </>
   );
 };
