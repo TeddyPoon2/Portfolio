@@ -54,7 +54,9 @@
   width: 100%;
   mask-image: url(../img/portrait_1_mask.png);
   -webkit-mask-image: url(../img/portrait_1_mask.png);
+  mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
   -webkit-mask-size: contain;
   bottom: -5px;
 }
@@ -64,6 +66,7 @@
 }
 
 .mask2 {
+  mask-image: url(../img/portrait_2_mask.png);
   -webkit-mask-image: url(../img/portrait_2_mask.png);
 }
 
@@ -72,6 +75,7 @@
 }
 
 .mask3 {
+  mask-image: url(../img/portrait_3_mask.png);
   -webkit-mask-image: url(../img/portrait_3_mask.png);
 }
 
