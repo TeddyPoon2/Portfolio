@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "../css/bgmBtn.css";
 import bgm from "../audio/Beneath the Mask_instrumental version_-9db.ogg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCirclePlay, faCirclePause } from "@fortawesome/free-solid-svg-icons";
 
 // eslint-disable-next-line react/prop-types
 const Bgm = ({ isInteracted }) => {
@@ -44,9 +46,26 @@ const Bgm = ({ isInteracted }) => {
 
   return (
     <>
-      <button onClick={handleClick} className="bgmBtn">
-        {bgmState ? "Pause" : "Play"}
-      </button>
+      <div className="bgmBtnWrap">
+        {bgmState ? (
+          <button className="bgmBtn" onClick={handleClick}>
+            <FontAwesomeIcon
+              icon={faCirclePause}
+              style={{ color: "#ffffff" }}
+              size="4x"
+            />
+          </button>
+        ) : (
+          <button className="bgmBtn" onClick={handleClick}>
+            <FontAwesomeIcon
+              icon={faCirclePlay}
+              style={{ color: "#ffffff" }}
+              size="4x"
+            />
+          </button>
+        )}
+        <span>BGM</span>
+      </div>
     </>
   );
 };

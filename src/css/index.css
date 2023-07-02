@@ -18,6 +18,16 @@
   cursor: url(../img/cursor2.png), auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:active,
+a:link {
+  color: white;
+}
+
 :root {
   /* 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -43,16 +43,6 @@ nav > a:nth-child(even):hover {
   animation-fill-mode: forwards;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:visited,
-a:active,
-a:link {
-  color: white;
-}
-
 .indicator {
   height: 60%;
   width: 20%;
