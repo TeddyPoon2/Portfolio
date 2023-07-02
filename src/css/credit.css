@@ -9,20 +9,103 @@
   position: relative;
 }
 
+.creditPageBG {
+  width: 1600px;
+  height: 2000px;
+  background-image: url(../img/bg_red_line.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  left: 800px;
+  top: -150px;
+}
+
 .creditPage > .title {
   font-family: Markin_LT_Ultra_Bold;
   font-size: 100px;
   position: absolute;
+
   transform: rotate(-30deg);
   left: 0;
   top: 0;
 }
 
 .creditPage ~ .dialogueWrapper > .dialogueImg > .content::before {
-  content: "So much thanks to them. With out them,\A I don't think my portfolio would exsit";
+  content: "Take your code (kidding). So much thanks\A to all of them, from my heart.";
   white-space: pre;
 }
 
 .creditPage ~ h1 {
   font-size: 50px;
+}
+
+.creditPageContainter {
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.leftContainter {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  animation-delay: 300ms;
+}
+
+.leftContainterBG {
+  width: 800px;
+  height: 500px;
+  background-image: url(../img/bottom_info_text_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.creditPageContent {
+  width: 660px;
+  height: 450px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.creditPageContent > p {
+  font-family: p5hatty;
+  font-size: 29px;
+}
+
+.rightContainter {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  animation-delay: 300ms;
+}
+
+.rightContainterBG {
+  border: 2px solid gold;
+  width: 700px;
+  height: 400px;
+  background-image: url(../img/capsule.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+.linkWrap {
+  position: absolute;
+  bottom: -5px;
+  right: -20px;
+  animation-delay: 1s;
+}
+
+.steamLink {
+  font-family: earwig_factory;
+  font-size: 70px;
+  text-shadow: -1px -1px 5px gold, 1px 1px 10px black;
+}
+
+.scaleY:hover {
+  transform: scale(1.1) translateY(-10px);
 }

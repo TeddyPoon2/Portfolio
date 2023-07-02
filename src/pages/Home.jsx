@@ -5,7 +5,6 @@ import homeBG from "../img/bg1.png";
 import { useState } from "react";
 
 const Home = () => {
-  const [ref] = useOutletContext();
   const [dia, setDia] = useState("Let's talk about me.");
 
   const handleClick = () => {

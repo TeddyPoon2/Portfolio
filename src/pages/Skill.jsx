@@ -27,7 +27,8 @@ const logos = {
   },
   react: {
     url: "src/img/react.png",
-    dialogue: "Thank you facebook, you saved my life. And many of us.",
+    dialogue:
+      "Thank you facebook, you saved my life. And many of us. Still need to dig deep.",
   },
   git: {
     url: "src/img/git.png",
@@ -62,7 +63,6 @@ const Skill = () => {
             <div className="html5Logo animate__animated animate__fadeInDown">
               <div
                 className="html5"
-                // src={logos.html5.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
@@ -70,7 +70,6 @@ const Skill = () => {
             <div className="css3Logo animate__animated animate__fadeInDown">
               <div
                 className="css3"
-                // src={logos.css3.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />

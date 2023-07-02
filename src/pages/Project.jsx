@@ -3,7 +3,8 @@ import DialogueBubble from "../com/DialogueBubble";
 import { useState } from "react";
 
 const Project = () => {
-  const defaultDialogue = "Some of my work during study in a bootcamp course.";
+  const defaultDialogue =
+    "Some of my work during study in a bootcamp course. Hover to see!";
   const [dia, setDia] = useState(defaultDialogue);
 
   const handleMouseLeave = () => {

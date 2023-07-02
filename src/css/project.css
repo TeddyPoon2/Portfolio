@@ -11,15 +11,6 @@
   position: relative;
 }
 
-.projectPage > .title {
-  font-family: Markin_LT_Ultra_Bold;
-  font-size: 100px;
-  position: absolute;
-  transform: rotate(-30deg);
-  left: 0;
-  top: 0;
-}
-
 /* .projectPage ~ .dialogueWrapper > .dialogueImg > .content::before {
   content: "Some of my works";
 } */
@@ -104,6 +95,7 @@
 
 .showimg3 {
   background-image: url(../img/project3cut.png);
+  top: -3px;
   /* left: -5px; */
 }
 
