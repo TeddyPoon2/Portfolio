@@ -60,57 +60,52 @@ const Skill = () => {
         <div className="skillBG animate__animated animate__fadeInRight">
           <div className="logoWrapper">
             <div className="html5Logo animate__animated animate__fadeInDown">
-              <img
+              <div
                 className="html5"
-                src={logos.html5.url}
+                // src={logos.html5.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
             </div>
             <div className="css3Logo animate__animated animate__fadeInDown">
-              <img
+              <div
                 className="css3"
-                src={logos.css3.url}
+                // src={logos.css3.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
             </div>
             <div className="jsLogo animate__animated animate__fadeInDown">
-              <img
+              <div
                 className="js"
-                src={logos.js.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
             </div>
             <div className="bsLogo animate__animated animate__fadeInDown">
-              <img
+              <div
                 className="bs"
-                src={logos.bs.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
             </div>
             <div className="reactLogo animate__animated animate__fadeInDown">
-              <img
+              <div
                 className="react"
-                src={logos.react.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
             </div>
             <div className="gitLogo animate__animated animate__fadeInDown">
-              <img
+              <div
                 className="git"
-                src={logos.git.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
             </div>
             <div className="javaLogo animate__animated animate__fadeInDown">
-              <img
+              <div
                 className="java"
-                src={logos.java.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />

@@ -53,76 +53,112 @@
 
 .html5Logo {
   width: 150px;
-  height: auto;
+  height: 150px;
   position: absolute;
   right: 620px;
   top: 220px;
   animation-delay: 1s;
 }
+.html5 {
+  background-image: url(../img/html5.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
 
 .css3Logo {
   width: 110px;
-  height: auto;
+  height: 155px;
   position: absolute;
   right: 500px;
   top: 290px;
   animation-delay: 1.2s;
 }
 
-.jsLogo,
-.javaLogo {
-  width: 100px;
-  height: auto;
+.css3 {
+  background-image: url(../img/css.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .jsLogo {
+  width: 100px;
+  height: 100px;
   position: absolute;
   right: 330px;
   top: 470px;
   animation-delay: 1.6s;
 }
+
+.js {
+  background-image: url(../img/js.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
 .javaLogo {
+  width: 100px;
+  height: 182px;
   position: absolute;
   right: 620px;
   top: 750px;
   animation-delay: 2.2s;
 }
 
-.bsLogo,
-.reactLogo,
-.gitLogo {
-  width: 130px;
-  height: auto;
+.java {
+  background-image: url(../img/java.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
+
 .bsLogo {
+  height: 103px;
+  width: 130px;
   position: absolute;
   right: 640px;
   top: 470px;
   animation-delay: 1.8s;
 }
+
+.bs {
+  background-image: url(../img/bs.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .reactLogo {
+  width: 130px;
+  height: 113px;
   position: absolute;
   right: 930px;
   top: 500px;
   animation-delay: 2s;
 }
+.react {
+  background-image: url(../img/react.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
 
 .gitLogo {
+  width: 130px;
+  height: 130px;
   position: absolute;
   right: 180px;
   top: 380px;
   animation-delay: 1.4s;
 }
 
-.html5,
-.css3,
-.js,
-.bs,
-.react,
-.git,
-.java {
-  max-width: 100%;
-  border-radius: 0.5rem;
+.git {
+  background-image: url(../img/git.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .html5:hover,
