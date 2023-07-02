@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="phoneBG skillTitle animate__animated animate__rotateInUpLeft">
           <img
             className="phone"
-            src="src/img/sns.png"
+            src="./src/img/sns.png"
             onError="/Portfolio/assets/sns-d635f2b5.png"
           ></img>
         </div>

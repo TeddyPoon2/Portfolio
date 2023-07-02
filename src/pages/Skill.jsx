@@ -7,7 +7,7 @@ const defaultDialogue =
 
 const logos = {
   html5: {
-    url: "src/img/html5.png",
+    url: "../src/img/html5.png",
     dialogue: "The bone of a website, I'm pretty familiar with it.",
   },
   css3: {
