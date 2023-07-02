@@ -6,6 +6,8 @@
 .projectPage {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 
@@ -18,6 +20,157 @@
   top: 0;
 }
 
-.projectPage ~ .dialogueWrapper > .dialogueImg > .content::before {
+/* .projectPage ~ .dialogueWrapper > .dialogueImg > .content::before {
   content: "Some of my works";
+} */
+
+.showCaseContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  /* gap: 1rem; */
+}
+
+.showCaseContainer > div {
+  height: 500px;
+  width: 350px;
+}
+
+.showCaseBG1,
+.showCaseBG2,
+.showCaseBG3 {
+  height: 500px;
+  width: 340px;
+  background-image: url(../img/portrait_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.mask1,
+.mask2,
+.mask3 {
+  height: 100%;
+  width: 100%;
+  mask-image: url(../img/portrait_1_mask.png);
+  -webkit-mask-image: url(../img/portrait_1_mask.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  bottom: -5px;
+}
+
+.showCaseBG2 {
+  background-image: url(../img/portrait_2.png);
+}
+
+.mask2 {
+  -webkit-mask-image: url(../img/portrait_2_mask.png);
+}
+
+.showCaseBG3 {
+  background-image: url(../img/portrait_3.png);
+}
+
+.mask3 {
+  -webkit-mask-image: url(../img/portrait_3_mask.png);
+}
+
+.showimg1,
+.showimg2,
+.showimg3,
+.showimg4,
+.showimg5 {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  position: absolute;
+}
+.showimg1 {
+  background-image: url(../img/project1.png);
+  top: 30px;
+  left: 5px;
+}
+.showimg2 {
+  background-image: url(../img/project2.png);
+  height: 90%;
+  width: 90%;
+  top: 20px;
+  left: 20px;
+}
+
+.showimg3 {
+  background-image: url(../img/project3cut.png);
+  /* left: -5px; */
+}
+
+.showimg4 {
+  background-image: url(../img/project4cut.png);
+  height: 100%;
+  width: 100%;
+  top: 15px;
+}
+
+.showimg5 {
+  background-image: url(../img/project5.png);
+  height: 100%;
+  width: 100%;
+  /* top: 15px; */
+}
+
+.hoverLayer:hover {
+  backdrop-filter: blur(3px);
+  opacity: 1;
+}
+
+.hoverLayer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 100ms ease-in;
+}
+
+.hoverLayer > a {
+  font-family: Markin_LT_Ultra_Bold;
+  color: black;
+  font-size: 30px;
+  width: 200px;
+  text-align: center;
+}
+.hoverLayer > a:hover {
+  transform: scale(1.1);
+}
+
+.hoverLayer > a:visited,
+.hoverLayer > a:active,
+.hoverLayer > a:link {
+  color: black;
+}
+
+.showCaseContainer > :nth-child(1) {
+  animation-delay: 20ms;
+}
+.showCaseContainer > :nth-child(2) {
+  animation-delay: 220ms;
+}
+.showCaseContainer > :nth-child(3) {
+  animation-delay: 420ms;
+}
+.showCaseContainer > :nth-child(4) {
+  animation-delay: 620ms;
+}
+.showCaseContainer > :nth-child(5) {
+  animation-delay: 820ms;
+}
+
+.showimg2 ~ .hoverLayer > a,
+.mask2 > .showimg5 ~ .hoverLayer > a {
+  color: white;
 }

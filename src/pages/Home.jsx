@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <div className="homePage">
-        <div className="container animate__animated animate__backInUp animate__delay-30ms">
+        <div className="container animate__animated animate__backInUp">
           <div className="aboutMeWrapper">
             <div className="homeBG">
               <h1 className="HomeTitle animate__animated animate__bounceInDown">
@@ -23,7 +23,7 @@ const Home = () => {
               </h1>
               <img src={homeBG}></img>
             </div>
-            <div className="aboutMe animate__animated animate__fadeInUp animate__delay-500ms">
+            <div className="aboutMe animate__animated animate__fadeInUp">
               <h3>
                 Hi, I'm Teddy Poon, a junior Front-End Developer located in Hong
                 Kong. I have a serious passion for web developing, designing and
