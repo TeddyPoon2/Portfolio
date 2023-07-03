@@ -22,8 +22,8 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="credit" element={<Credit />} />
     </Route>
-  ),
-  { basename: "/Portfolio" }
+  )
+  // { basename: "/Portfolio" }
 );
 
 function App() {
