@@ -83,10 +83,11 @@
 }
 
 .contactWrapper > a:hover {
-  animation: contactBounce;
+  /* animation: contactBounce;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
+  color: red;
 }
 
 .contactWrapper {

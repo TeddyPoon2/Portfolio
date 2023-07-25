@@ -5,6 +5,7 @@ import DialogueBubble from "../com/DialogueBubble";
 const defaultDialogue =
   "What I've learned so far through bootcamp and myself, try hover those icon ;)";
 
+//image url are useless now, deploying on github messed up the path
 const logos = {
   html5: {
     url: "../src/img/html5.png",
@@ -28,7 +29,7 @@ const logos = {
   react: {
     url: "src/img/react.png",
     dialogue:
-      "Thank you facebook, you saved my life. And many of us. Still need to dig deep.",
+      "The most popular JS library for web development, still need to learn more.",
   },
   git: {
     url: "src/img/git.png",
