@@ -33,6 +33,15 @@
   width: 610px;
 }
 
+/* .content > span {
+  color: white;
+  position: absolute;
+  top: 80px;
+  left: 190px;
+  height: 100px;
+  width: 610px;
+} */
+
 .animate__animated.animate__rotateInUpLeft {
   --animate-duration: 0.5s;
 }
