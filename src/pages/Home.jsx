@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom";
+// import { useOutletContext } from "react-router-dom";
 import "../css/home.css";
 import DialogueBubble from "../com/DialogueBubble";
 import homeBG from "../img/bg1.png";
@@ -8,7 +8,7 @@ const Home = () => {
   const [dia, setDia] = useState("Let's talk about me.");
 
   const handleClick = () => {
-    setDia("I'm also a gamer, an audiophile and an ACG lover.");
+    setDia("I'm also a gamer, a model maker, an audiophile and an ACG lover.");
   };
 
   return (
@@ -29,14 +29,14 @@ const Home = () => {
                 programming.
               </h3>
               <h3>
-                I'm enthusiastic in the entire frontend development field,
+                I'm enthusiastic in the entire software development field,
                 aiming to deliver the best experience and attractive visual
                 appearance to users.
               </h3>
             </div>
             <div className="logotoggle"></div>
             <div className="logo">
-              <span className="logoLR">&lt; /&gt;</span>
+              <span className="logoLR">&lt; _/&gt;</span>
             </div>
           </div>
         </div>

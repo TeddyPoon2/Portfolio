@@ -24,21 +24,19 @@ const logos = {
   bs: {
     url: "src/img/bs.png",
     dialogue:
-      "Pretty good and easy to use framework, very beginner friendly. I like it.",
+      "Pretty good and easy to use framework and very beginner friendly.",
   },
   react: {
     url: "src/img/react.png",
-    dialogue:
-      "The most popular JS library for web development, still need to learn more.",
+    dialogue: "The most popular JS library for web development by Meta.",
   },
   git: {
     url: "src/img/git.png",
-    dialogue:
-      "Version control system, an insurance of any developer. And me also :P",
+    dialogue: "Version control system, an insurance of any developer. And me.",
   },
   java: {
     url: "src/img/java.png",
-    dialogue: "I learn a little bit of it, planning to learn more later on.",
+    dialogue: "I learn a little bit of it, planning to learn more.",
   },
 };
 

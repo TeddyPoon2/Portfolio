@@ -31,13 +31,13 @@ const Contact = () => {
               size={"3x"}
             />
             <a
-              href="mailto:tatlamp@hotmail.com"
+              href="mailto:tatlamp@icloud.com"
               onMouseEnter={() => {
                 setDia("Click to send email to me.");
               }}
               onMouseLeave={handleMouseLeave}
             >
-              tatlamp@hotmail.com
+              tatlamp@icloud.com
             </a>
           </div>
           <div className="contactWrapper animate__animated animate__fadeInUp">

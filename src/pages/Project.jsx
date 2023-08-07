@@ -3,8 +3,7 @@ import DialogueBubble from "../com/DialogueBubble";
 import { useState } from "react";
 
 const Project = () => {
-  const defaultDialogue =
-    "Some of my work during study in a bootcamp course. Hover to see!";
+  const defaultDialogue = "Some of my work. Try hover to see!";
   const [dia, setDia] = useState(defaultDialogue);
 
   const handleMouseLeave = () => {
@@ -23,7 +22,7 @@ const Project = () => {
                   className="hoverLayer"
                   onMouseEnter={() => {
                     setDia(
-                      "A group project using react in the bootcamp course period."
+                      "A group project mainly using React hooks to create a money planner app."
                     );
                   }}
                   onMouseLeave={handleMouseLeave}
@@ -54,7 +53,7 @@ const Project = () => {
                   className="hoverLayer"
                   onMouseEnter={() => {
                     setDia(
-                      "A calculator app using react while I’m learning about useReducer."
+                      "A iOS like calculator app mainly using React useReducer hook."
                     );
                   }}
                   onMouseLeave={handleMouseLeave}
@@ -85,7 +84,7 @@ const Project = () => {
                   className="hoverLayer"
                   onMouseEnter={() => {
                     setDia(
-                      "A little tool to check KMB ETA while I'm learing about JS and DOM element."
+                      "A chrome extension to check KMB ETA written in HTML, CSS and Javascript."
                     );
                   }}
                   onMouseLeave={handleMouseLeave}
@@ -116,7 +115,7 @@ const Project = () => {
                   className="hoverLayer"
                   onMouseEnter={() => {
                     setDia(
-                      "A group project try using JS to create hangman in the bootcamp course period."
+                      "A hangman game written in HTML, CSS and Javascript."
                     );
                   }}
                   onMouseLeave={handleMouseLeave}
@@ -147,7 +146,7 @@ const Project = () => {
                   className="hoverLayer"
                   onMouseEnter={() => {
                     setDia(
-                      "A group project try to recreate a responsive website."
+                      "A project to recreate a responsive website, contributed with other developer."
                     );
                   }}
                   onMouseLeave={handleMouseLeave}
