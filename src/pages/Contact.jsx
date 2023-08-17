@@ -76,24 +76,6 @@ const Contact = () => {
               GitHub
             </a>
           </div>
-          <div className="contactWrapper animate__animated animate__fadeInUp">
-            <FontAwesomeIcon
-              icon={faSteam}
-              style={{ color: "#ffffff" }}
-              size={"3x"}
-            />
-            <a
-              href="https://steamcommunity.com/id/dxphone/"
-              target="_blank"
-              rel="noreferrer"
-              onMouseEnter={() => {
-                setDia("Feel free to add my friend :)");
-              }}
-              onMouseLeave={handleMouseLeave}
-            >
-              Steam
-            </a>
-          </div>
         </div>
       </div>
       <DialogueBubble content={dia} />
